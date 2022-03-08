@@ -30,32 +30,32 @@ namespace JoesAutoPriceSheet
         private void InitializeComponent()
         {
             this.oilAndLubeGrpBox = new System.Windows.Forms.GroupBox();
-            this.flushGrpBox = new System.Windows.Forms.GroupBox();
-            this.miscGrpBox = new System.Windows.Forms.GroupBox();
-            this.partsLaborGrpBox = new System.Windows.Forms.GroupBox();
-            this.sumGrpBox = new System.Windows.Forms.GroupBox();
-            this.oilChgeChkBox = new System.Windows.Forms.CheckBox();
             this.lubeChkBox = new System.Windows.Forms.CheckBox();
-            this.radFlushChkBox = new System.Windows.Forms.CheckBox();
+            this.oilChgeChkBox = new System.Windows.Forms.CheckBox();
+            this.flushGrpBox = new System.Windows.Forms.GroupBox();
             this.tranFlushChkBox = new System.Windows.Forms.CheckBox();
-            this.inspectChkBox = new System.Windows.Forms.CheckBox();
-            this.mufflerChkBox = new System.Windows.Forms.CheckBox();
+            this.radFlushChkBox = new System.Windows.Forms.CheckBox();
+            this.miscGrpBox = new System.Windows.Forms.GroupBox();
             this.tireRotChkBox = new System.Windows.Forms.CheckBox();
-            this.partsLabel = new System.Windows.Forms.Label();
+            this.mufflerChkBox = new System.Windows.Forms.CheckBox();
+            this.inspectChkBox = new System.Windows.Forms.CheckBox();
+            this.partsLaborGrpBox = new System.Windows.Forms.GroupBox();
+            this.laborTextBox = new System.Windows.Forms.TextBox();
+            this.partsTextBox = new System.Windows.Forms.TextBox();
             this.laborLabel = new System.Windows.Forms.Label();
-            this.servSumLaborLabel = new System.Windows.Forms.Label();
-            this.partsSumLabel = new System.Windows.Forms.Label();
-            this.taxSumLabel = new System.Windows.Forms.Label();
+            this.partsLabel = new System.Windows.Forms.Label();
+            this.sumGrpBox = new System.Windows.Forms.GroupBox();
+            this.totFeesOutputLabel = new System.Windows.Forms.Label();
+            this.totTaxOutputLabel = new System.Windows.Forms.Label();
+            this.totPartsOutputLabel = new System.Windows.Forms.Label();
+            this.totServAndLabOutputLabel = new System.Windows.Forms.Label();
             this.totFeesSumLlabel = new System.Windows.Forms.Label();
-            this.totServAndLaborLbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.taxSumLabel = new System.Windows.Forms.Label();
+            this.partsSumLabel = new System.Windows.Forms.Label();
+            this.servSumLaborLabel = new System.Windows.Forms.Label();
             this.calcButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
-            this.partsTextBox = new System.Windows.Forms.TextBox();
-            this.laborTextBox = new System.Windows.Forms.TextBox();
             this.oilAndLubeGrpBox.SuspendLayout();
             this.flushGrpBox.SuspendLayout();
             this.miscGrpBox.SuspendLayout();
@@ -68,84 +68,13 @@ namespace JoesAutoPriceSheet
             this.oilAndLubeGrpBox.Controls.Add(this.lubeChkBox);
             this.oilAndLubeGrpBox.Controls.Add(this.oilChgeChkBox);
             this.oilAndLubeGrpBox.Location = new System.Drawing.Point(39, 18);
-            this.oilAndLubeGrpBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.oilAndLubeGrpBox.Margin = new System.Windows.Forms.Padding(4);
             this.oilAndLubeGrpBox.Name = "oilAndLubeGrpBox";
-            this.oilAndLubeGrpBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.oilAndLubeGrpBox.Padding = new System.Windows.Forms.Padding(4);
             this.oilAndLubeGrpBox.Size = new System.Drawing.Size(222, 113);
             this.oilAndLubeGrpBox.TabIndex = 0;
             this.oilAndLubeGrpBox.TabStop = false;
             this.oilAndLubeGrpBox.Text = "Oil and Lube";
-            // 
-            // flushGrpBox
-            // 
-            this.flushGrpBox.Controls.Add(this.tranFlushChkBox);
-            this.flushGrpBox.Controls.Add(this.radFlushChkBox);
-            this.flushGrpBox.Location = new System.Drawing.Point(289, 18);
-            this.flushGrpBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flushGrpBox.Name = "flushGrpBox";
-            this.flushGrpBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.flushGrpBox.Size = new System.Drawing.Size(222, 113);
-            this.flushGrpBox.TabIndex = 1;
-            this.flushGrpBox.TabStop = false;
-            this.flushGrpBox.Text = "Flushes";
-            // 
-            // miscGrpBox
-            // 
-            this.miscGrpBox.Controls.Add(this.tireRotChkBox);
-            this.miscGrpBox.Controls.Add(this.mufflerChkBox);
-            this.miscGrpBox.Controls.Add(this.inspectChkBox);
-            this.miscGrpBox.Location = new System.Drawing.Point(39, 149);
-            this.miscGrpBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.miscGrpBox.Name = "miscGrpBox";
-            this.miscGrpBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.miscGrpBox.Size = new System.Drawing.Size(222, 155);
-            this.miscGrpBox.TabIndex = 2;
-            this.miscGrpBox.TabStop = false;
-            this.miscGrpBox.Text = "Misc";
-            // 
-            // partsLaborGrpBox
-            // 
-            this.partsLaborGrpBox.Controls.Add(this.laborTextBox);
-            this.partsLaborGrpBox.Controls.Add(this.partsTextBox);
-            this.partsLaborGrpBox.Controls.Add(this.laborLabel);
-            this.partsLaborGrpBox.Controls.Add(this.partsLabel);
-            this.partsLaborGrpBox.Location = new System.Drawing.Point(289, 149);
-            this.partsLaborGrpBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.partsLaborGrpBox.Name = "partsLaborGrpBox";
-            this.partsLaborGrpBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.partsLaborGrpBox.Size = new System.Drawing.Size(222, 155);
-            this.partsLaborGrpBox.TabIndex = 3;
-            this.partsLaborGrpBox.TabStop = false;
-            this.partsLaborGrpBox.Text = "Parts and Labor";
-            // 
-            // sumGrpBox
-            // 
-            this.sumGrpBox.Controls.Add(this.label3);
-            this.sumGrpBox.Controls.Add(this.label2);
-            this.sumGrpBox.Controls.Add(this.label1);
-            this.sumGrpBox.Controls.Add(this.totServAndLaborLbl);
-            this.sumGrpBox.Controls.Add(this.totFeesSumLlabel);
-            this.sumGrpBox.Controls.Add(this.taxSumLabel);
-            this.sumGrpBox.Controls.Add(this.partsSumLabel);
-            this.sumGrpBox.Controls.Add(this.servSumLaborLabel);
-            this.sumGrpBox.Location = new System.Drawing.Point(39, 326);
-            this.sumGrpBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.sumGrpBox.Name = "sumGrpBox";
-            this.sumGrpBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.sumGrpBox.Size = new System.Drawing.Size(472, 211);
-            this.sumGrpBox.TabIndex = 3;
-            this.sumGrpBox.TabStop = false;
-            this.sumGrpBox.Text = "Summary";
-            // 
-            // oilChgeChkBox
-            // 
-            this.oilChgeChkBox.AutoSize = true;
-            this.oilChgeChkBox.Location = new System.Drawing.Point(19, 29);
-            this.oilChgeChkBox.Name = "oilChgeChkBox";
-            this.oilChgeChkBox.Size = new System.Drawing.Size(147, 20);
-            this.oilChgeChkBox.TabIndex = 0;
-            this.oilChgeChkBox.Text = "Oil Change ($26.00)";
-            this.oilChgeChkBox.UseVisualStyleBackColor = true;
             // 
             // lubeChkBox
             // 
@@ -157,15 +86,28 @@ namespace JoesAutoPriceSheet
             this.lubeChkBox.Text = "Lube Job ($18.00)";
             this.lubeChkBox.UseVisualStyleBackColor = true;
             // 
-            // radFlushChkBox
+            // oilChgeChkBox
             // 
-            this.radFlushChkBox.AutoSize = true;
-            this.radFlushChkBox.Location = new System.Drawing.Point(7, 29);
-            this.radFlushChkBox.Name = "radFlushChkBox";
-            this.radFlushChkBox.Size = new System.Drawing.Size(167, 20);
-            this.radFlushChkBox.TabIndex = 2;
-            this.radFlushChkBox.Text = "Radiator Flush ($30.00)";
-            this.radFlushChkBox.UseVisualStyleBackColor = true;
+            this.oilChgeChkBox.AutoSize = true;
+            this.oilChgeChkBox.Location = new System.Drawing.Point(19, 29);
+            this.oilChgeChkBox.Name = "oilChgeChkBox";
+            this.oilChgeChkBox.Size = new System.Drawing.Size(147, 20);
+            this.oilChgeChkBox.TabIndex = 0;
+            this.oilChgeChkBox.Text = "Oil Change ($26.00)";
+            this.oilChgeChkBox.UseVisualStyleBackColor = true;
+            // 
+            // flushGrpBox
+            // 
+            this.flushGrpBox.Controls.Add(this.tranFlushChkBox);
+            this.flushGrpBox.Controls.Add(this.radFlushChkBox);
+            this.flushGrpBox.Location = new System.Drawing.Point(289, 18);
+            this.flushGrpBox.Margin = new System.Windows.Forms.Padding(4);
+            this.flushGrpBox.Name = "flushGrpBox";
+            this.flushGrpBox.Padding = new System.Windows.Forms.Padding(4);
+            this.flushGrpBox.Size = new System.Drawing.Size(222, 113);
+            this.flushGrpBox.TabIndex = 1;
+            this.flushGrpBox.TabStop = false;
+            this.flushGrpBox.Text = "Flushes";
             // 
             // tranFlushChkBox
             // 
@@ -177,25 +119,29 @@ namespace JoesAutoPriceSheet
             this.tranFlushChkBox.Text = "Transmission Flush ($80.00)";
             this.tranFlushChkBox.UseVisualStyleBackColor = true;
             // 
-            // inspectChkBox
+            // radFlushChkBox
             // 
-            this.inspectChkBox.AutoSize = true;
-            this.inspectChkBox.Location = new System.Drawing.Point(19, 30);
-            this.inspectChkBox.Name = "inspectChkBox";
-            this.inspectChkBox.Size = new System.Drawing.Size(144, 20);
-            this.inspectChkBox.TabIndex = 2;
-            this.inspectChkBox.Text = "Inspection ($15.00)";
-            this.inspectChkBox.UseVisualStyleBackColor = true;
+            this.radFlushChkBox.AutoSize = true;
+            this.radFlushChkBox.Location = new System.Drawing.Point(7, 29);
+            this.radFlushChkBox.Name = "radFlushChkBox";
+            this.radFlushChkBox.Size = new System.Drawing.Size(167, 20);
+            this.radFlushChkBox.TabIndex = 2;
+            this.radFlushChkBox.Text = "Radiator Flush ($30.00)";
+            this.radFlushChkBox.UseVisualStyleBackColor = true;
             // 
-            // mufflerChkBox
+            // miscGrpBox
             // 
-            this.mufflerChkBox.AutoSize = true;
-            this.mufflerChkBox.Location = new System.Drawing.Point(19, 67);
-            this.mufflerChkBox.Name = "mufflerChkBox";
-            this.mufflerChkBox.Size = new System.Drawing.Size(181, 20);
-            this.mufflerChkBox.TabIndex = 3;
-            this.mufflerChkBox.Text = "Replace Muffler ($100.00)";
-            this.mufflerChkBox.UseVisualStyleBackColor = true;
+            this.miscGrpBox.Controls.Add(this.tireRotChkBox);
+            this.miscGrpBox.Controls.Add(this.mufflerChkBox);
+            this.miscGrpBox.Controls.Add(this.inspectChkBox);
+            this.miscGrpBox.Location = new System.Drawing.Point(39, 149);
+            this.miscGrpBox.Margin = new System.Windows.Forms.Padding(4);
+            this.miscGrpBox.Name = "miscGrpBox";
+            this.miscGrpBox.Padding = new System.Windows.Forms.Padding(4);
+            this.miscGrpBox.Size = new System.Drawing.Size(222, 155);
+            this.miscGrpBox.TabIndex = 2;
+            this.miscGrpBox.TabStop = false;
+            this.miscGrpBox.Text = "Misc";
             // 
             // tireRotChkBox
             // 
@@ -207,15 +153,54 @@ namespace JoesAutoPriceSheet
             this.tireRotChkBox.Text = "Tire Rotation ($20.00)";
             this.tireRotChkBox.UseVisualStyleBackColor = true;
             // 
-            // partsLabel
+            // mufflerChkBox
             // 
-            this.partsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.partsLabel.AutoSize = true;
-            this.partsLabel.Location = new System.Drawing.Point(63, 48);
-            this.partsLabel.Name = "partsLabel";
-            this.partsLabel.Size = new System.Drawing.Size(39, 16);
-            this.partsLabel.TabIndex = 0;
-            this.partsLabel.Text = "Parts";
+            this.mufflerChkBox.AutoSize = true;
+            this.mufflerChkBox.Location = new System.Drawing.Point(19, 67);
+            this.mufflerChkBox.Name = "mufflerChkBox";
+            this.mufflerChkBox.Size = new System.Drawing.Size(181, 20);
+            this.mufflerChkBox.TabIndex = 3;
+            this.mufflerChkBox.Text = "Replace Muffler ($100.00)";
+            this.mufflerChkBox.UseVisualStyleBackColor = true;
+            // 
+            // inspectChkBox
+            // 
+            this.inspectChkBox.AutoSize = true;
+            this.inspectChkBox.Location = new System.Drawing.Point(19, 30);
+            this.inspectChkBox.Name = "inspectChkBox";
+            this.inspectChkBox.Size = new System.Drawing.Size(144, 20);
+            this.inspectChkBox.TabIndex = 2;
+            this.inspectChkBox.Text = "Inspection ($15.00)";
+            this.inspectChkBox.UseVisualStyleBackColor = true;
+            // 
+            // partsLaborGrpBox
+            // 
+            this.partsLaborGrpBox.Controls.Add(this.laborTextBox);
+            this.partsLaborGrpBox.Controls.Add(this.partsTextBox);
+            this.partsLaborGrpBox.Controls.Add(this.laborLabel);
+            this.partsLaborGrpBox.Controls.Add(this.partsLabel);
+            this.partsLaborGrpBox.Location = new System.Drawing.Point(289, 149);
+            this.partsLaborGrpBox.Margin = new System.Windows.Forms.Padding(4);
+            this.partsLaborGrpBox.Name = "partsLaborGrpBox";
+            this.partsLaborGrpBox.Padding = new System.Windows.Forms.Padding(4);
+            this.partsLaborGrpBox.Size = new System.Drawing.Size(222, 155);
+            this.partsLaborGrpBox.TabIndex = 3;
+            this.partsLaborGrpBox.TabStop = false;
+            this.partsLaborGrpBox.Text = "Parts and Labor";
+            // 
+            // laborTextBox
+            // 
+            this.laborTextBox.Location = new System.Drawing.Point(108, 87);
+            this.laborTextBox.Name = "laborTextBox";
+            this.laborTextBox.Size = new System.Drawing.Size(84, 22);
+            this.laborTextBox.TabIndex = 8;
+            // 
+            // partsTextBox
+            // 
+            this.partsTextBox.Location = new System.Drawing.Point(108, 48);
+            this.partsTextBox.Name = "partsTextBox";
+            this.partsTextBox.Size = new System.Drawing.Size(84, 22);
+            this.partsTextBox.TabIndex = 7;
             // 
             // laborLabel
             // 
@@ -227,35 +212,82 @@ namespace JoesAutoPriceSheet
             this.laborLabel.TabIndex = 1;
             this.laborLabel.Text = "Labor ($)";
             // 
-            // servSumLaborLabel
+            // partsLabel
             // 
-            this.servSumLaborLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.servSumLaborLabel.AutoSize = true;
-            this.servSumLaborLabel.Location = new System.Drawing.Point(75, 36);
-            this.servSumLaborLabel.Name = "servSumLaborLabel";
-            this.servSumLaborLabel.Size = new System.Drawing.Size(114, 16);
-            this.servSumLaborLabel.TabIndex = 2;
-            this.servSumLaborLabel.Text = "Service and Labor";
+            this.partsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.partsLabel.AutoSize = true;
+            this.partsLabel.Location = new System.Drawing.Point(63, 48);
+            this.partsLabel.Name = "partsLabel";
+            this.partsLabel.Size = new System.Drawing.Size(39, 16);
+            this.partsLabel.TabIndex = 0;
+            this.partsLabel.Text = "Parts";
             // 
-            // partsSumLabel
+            // sumGrpBox
             // 
-            this.partsSumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.partsSumLabel.AutoSize = true;
-            this.partsSumLabel.Location = new System.Drawing.Point(150, 76);
-            this.partsSumLabel.Name = "partsSumLabel";
-            this.partsSumLabel.Size = new System.Drawing.Size(39, 16);
-            this.partsSumLabel.TabIndex = 3;
-            this.partsSumLabel.Text = "Parts";
+            this.sumGrpBox.Controls.Add(this.totFeesOutputLabel);
+            this.sumGrpBox.Controls.Add(this.totTaxOutputLabel);
+            this.sumGrpBox.Controls.Add(this.totPartsOutputLabel);
+            this.sumGrpBox.Controls.Add(this.totServAndLabOutputLabel);
+            this.sumGrpBox.Controls.Add(this.totFeesSumLlabel);
+            this.sumGrpBox.Controls.Add(this.taxSumLabel);
+            this.sumGrpBox.Controls.Add(this.partsSumLabel);
+            this.sumGrpBox.Controls.Add(this.servSumLaborLabel);
+            this.sumGrpBox.Location = new System.Drawing.Point(39, 326);
+            this.sumGrpBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sumGrpBox.Name = "sumGrpBox";
+            this.sumGrpBox.Padding = new System.Windows.Forms.Padding(4);
+            this.sumGrpBox.Size = new System.Drawing.Size(472, 211);
+            this.sumGrpBox.TabIndex = 3;
+            this.sumGrpBox.TabStop = false;
+            this.sumGrpBox.Text = "Summary";
             // 
-            // taxSumLabel
+            // totFeesOutputLabel
             // 
-            this.taxSumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.taxSumLabel.AutoSize = true;
-            this.taxSumLabel.Location = new System.Drawing.Point(99, 116);
-            this.taxSumLabel.Name = "taxSumLabel";
-            this.taxSumLabel.Size = new System.Drawing.Size(90, 16);
-            this.taxSumLabel.TabIndex = 4;
-            this.taxSumLabel.Text = "Tax (on parts)";
+            this.totFeesOutputLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.totFeesOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totFeesOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totFeesOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.totFeesOutputLabel.Location = new System.Drawing.Point(217, 152);
+            this.totFeesOutputLabel.Name = "totFeesOutputLabel";
+            this.totFeesOutputLabel.Size = new System.Drawing.Size(139, 26);
+            this.totFeesOutputLabel.TabIndex = 9;
+            this.totFeesOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totTaxOutputLabel
+            // 
+            this.totTaxOutputLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.totTaxOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totTaxOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totTaxOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.totTaxOutputLabel.Location = new System.Drawing.Point(217, 111);
+            this.totTaxOutputLabel.Name = "totTaxOutputLabel";
+            this.totTaxOutputLabel.Size = new System.Drawing.Size(139, 26);
+            this.totTaxOutputLabel.TabIndex = 8;
+            this.totTaxOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totPartsOutputLabel
+            // 
+            this.totPartsOutputLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.totPartsOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totPartsOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totPartsOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.totPartsOutputLabel.Location = new System.Drawing.Point(217, 71);
+            this.totPartsOutputLabel.Name = "totPartsOutputLabel";
+            this.totPartsOutputLabel.Size = new System.Drawing.Size(139, 26);
+            this.totPartsOutputLabel.TabIndex = 7;
+            this.totPartsOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totServAndLabOutputLabel
+            // 
+            this.totServAndLabOutputLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.totServAndLabOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totServAndLabOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totServAndLabOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.totServAndLabOutputLabel.Location = new System.Drawing.Point(217, 31);
+            this.totServAndLabOutputLabel.Name = "totServAndLabOutputLabel";
+            this.totServAndLabOutputLabel.Size = new System.Drawing.Size(139, 26);
+            this.totServAndLabOutputLabel.TabIndex = 6;
+            this.totServAndLabOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // totFeesSumLlabel
             // 
@@ -267,53 +299,35 @@ namespace JoesAutoPriceSheet
             this.totFeesSumLlabel.TabIndex = 5;
             this.totFeesSumLlabel.Text = "Total Fees";
             // 
-            // totServAndLaborLbl
+            // taxSumLabel
             // 
-            this.totServAndLaborLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.totServAndLaborLbl.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.totServAndLaborLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totServAndLaborLbl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.totServAndLaborLbl.Location = new System.Drawing.Point(217, 31);
-            this.totServAndLaborLbl.Name = "totServAndLaborLbl";
-            this.totServAndLaborLbl.Size = new System.Drawing.Size(139, 26);
-            this.totServAndLaborLbl.TabIndex = 6;
-            this.totServAndLaborLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.taxSumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.taxSumLabel.AutoSize = true;
+            this.taxSumLabel.Location = new System.Drawing.Point(99, 116);
+            this.taxSumLabel.Name = "taxSumLabel";
+            this.taxSumLabel.Size = new System.Drawing.Size(90, 16);
+            this.taxSumLabel.TabIndex = 4;
+            this.taxSumLabel.Text = "Tax (on parts)";
             // 
-            // label1
+            // partsSumLabel
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Location = new System.Drawing.Point(217, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 26);
-            this.label1.TabIndex = 7;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.partsSumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.partsSumLabel.AutoSize = true;
+            this.partsSumLabel.Location = new System.Drawing.Point(86, 76);
+            this.partsSumLabel.Name = "partsSumLabel";
+            this.partsSumLabel.Size = new System.Drawing.Size(103, 16);
+            this.partsSumLabel.TabIndex = 3;
+            this.partsSumLabel.Text = "Parts and Labor";
             // 
-            // label2
+            // servSumLaborLabel
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Location = new System.Drawing.Point(217, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 26);
-            this.label2.TabIndex = 8;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Location = new System.Drawing.Point(217, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 26);
-            this.label3.TabIndex = 9;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.servSumLaborLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.servSumLaborLabel.AutoSize = true;
+            this.servSumLaborLabel.Location = new System.Drawing.Point(133, 36);
+            this.servSumLaborLabel.Name = "servSumLaborLabel";
+            this.servSumLaborLabel.Size = new System.Drawing.Size(56, 16);
+            this.servSumLaborLabel.TabIndex = 2;
+            this.servSumLaborLabel.Text = "Services";
             // 
             // calcButton
             // 
@@ -323,6 +337,7 @@ namespace JoesAutoPriceSheet
             this.calcButton.TabIndex = 4;
             this.calcButton.Text = "C&alculate";
             this.calcButton.UseVisualStyleBackColor = true;
+            this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
             // 
             // clearButton
             // 
@@ -332,6 +347,7 @@ namespace JoesAutoPriceSheet
             this.clearButton.TabIndex = 5;
             this.clearButton.Text = "&Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -341,20 +357,7 @@ namespace JoesAutoPriceSheet
             this.exitButton.TabIndex = 6;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
-            // 
-            // partsTextBox
-            // 
-            this.partsTextBox.Location = new System.Drawing.Point(108, 48);
-            this.partsTextBox.Name = "partsTextBox";
-            this.partsTextBox.Size = new System.Drawing.Size(84, 22);
-            this.partsTextBox.TabIndex = 7;
-            // 
-            // laborTextBox
-            // 
-            this.laborTextBox.Location = new System.Drawing.Point(108, 87);
-            this.laborTextBox.Name = "laborTextBox";
-            this.laborTextBox.Size = new System.Drawing.Size(84, 22);
-            this.laborTextBox.TabIndex = 8;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
@@ -371,7 +374,7 @@ namespace JoesAutoPriceSheet
             this.Controls.Add(this.flushGrpBox);
             this.Controls.Add(this.oilAndLubeGrpBox);
             this.Font = new System.Drawing.Font("Eras Demi ITC", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Joe\'s Automotive Estimate Calculator ";
             this.oilAndLubeGrpBox.ResumeLayout(false);
@@ -406,10 +409,10 @@ namespace JoesAutoPriceSheet
         private System.Windows.Forms.Label laborLabel;
         private System.Windows.Forms.Label partsLabel;
         private System.Windows.Forms.GroupBox sumGrpBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label totServAndLaborLbl;
+        private System.Windows.Forms.Label totFeesOutputLabel;
+        private System.Windows.Forms.Label totTaxOutputLabel;
+        private System.Windows.Forms.Label totPartsOutputLabel;
+        private System.Windows.Forms.Label totServAndLabOutputLabel;
         private System.Windows.Forms.Label totFeesSumLlabel;
         private System.Windows.Forms.Label taxSumLabel;
         private System.Windows.Forms.Label partsSumLabel;
