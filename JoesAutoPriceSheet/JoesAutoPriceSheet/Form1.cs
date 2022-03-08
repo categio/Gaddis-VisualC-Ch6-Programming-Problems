@@ -19,7 +19,7 @@ namespace JoesAutoPriceSheet
 
         private void calcButton_Click(object sender, EventArgs e)
         {
-            //variables to hold values
+            //variables to hold cost value of services represented by checked boxes
             decimal oilChange = 0m, lubeJob = 0m, radiFlush = 0m, tranFlush = 0m,
                 inspection = 0m, muffRepair = 0m, tireRotate = 0m;
 
@@ -53,19 +53,16 @@ namespace JoesAutoPriceSheet
                 tireRotate = 30.00m;
             }
 
-            //checks value of input for parts and labor text boxes 
+            //declare variables to hold the parsed value if it is numerical 
             decimal partsCost = 0m, laborCost = 0m;
+
+            //checks value of input for parts and labor text boxes if the data is numerical,
+            //the data passes the entered values to the variables partsCost and laborCost
             if (decimal.TryParse(partsTextBox.Text, out partsCost))
             {
                 if (decimal.TryParse(laborTextBox.Text, out laborCost))
                 {
-                    //if value is a decimal, get value and convert
-                    partsCost = decimal.Parse(partsTextBox.Text);
-
-                    //if value is a decimal, get value and convert
-                    laborCost = decimal.Parse(laborTextBox.Text);
-
-                    //get value from methods
+                    //get calculation values from all the methods
                     decimal totOilLube = OilLubeCharges(oilChange, lubeJob);
 
                     decimal totFlushes = FlushCharges(radiFlush, tranFlush);
@@ -80,7 +77,7 @@ namespace JoesAutoPriceSheet
 
                     decimal totalFees = TotalCharges(totOilLube, totFlushes, totMisc, totOther, tax);
 
-                    //print to text boxes
+                    //print calculations of selected and entered data to output labels
                     totServAndLabOutputLabel.Text = totSvcs.ToString("c");
                     totPartsOutputLabel.Text = totOther.ToString("c");
                     totTaxOutputLabel.Text = tax.ToString("c");
@@ -88,48 +85,53 @@ namespace JoesAutoPriceSheet
                 }
                 else
                 {
-                    //value is not parseable, show error
+                    //value is not parseable as decimal, show error
                     MessageBox.Show("Please enter a numerical value for the cost of labor.");
 
-                    //clear the textbox for labor
+                    //clear the textbox for labor only
                     laborTextBox.Text = "";
                 }
             }
             else
             {
-                //value not parseable, show error
+                //value not parseable as decimal, show error
                 MessageBox.Show("Please enter a numerical value for the cost of parts.");
 
-                //clear the textbox for parts
+                //clear the textbox for parts only
                 partsTextBox.Text = "";
             }
 
         }
 
+        //calculates the total cost amount of selected items from the oilAndLubeGrpBox
         private decimal OilLubeCharges(decimal oilChng, decimal lubeChng)
         {
             //combine charges for oil/lube ordered
             return oilChng + lubeChng;
         }
 
+        //calculates the total cost amount of selected items from the flushGrpBox
         private decimal FlushCharges(decimal radChrg, decimal tranChrg)
         {
             //combine charges for flushes ordered
             return radChrg + tranChrg;
         }
 
+        //calculates the total cost amount of selected items from the miscGrpBox
         private decimal MiscCharges(decimal inspectChrg, decimal muffChrg, decimal tireChrg)
         {
             //combine charges for misc services ordered
             return inspectChrg + muffChrg + tireChrg;
         }
 
+        //calculates the total cost amount of entered data in the partsLaborGrpBox
         private decimal OtherCharges(decimal partsChrg, decimal laborChrg)
         {
             //combine parts & labor charges
             return partsChrg + laborChrg;
         }
 
+        //calculates the taxes (if any) on Parts charges entered into the partsTextBox
         private decimal TaxCharges(decimal partsChrg)
         {
             //variable for tax cost
@@ -146,6 +148,7 @@ namespace JoesAutoPriceSheet
                 return 0m;
         }
 
+        //calculates the total cost of all charges selected or entered by a user
         private decimal TotalCharges(decimal totOilLube, decimal totFlushes,
             decimal totMisc, decimal totOther, decimal totTax)
         {
@@ -153,18 +156,21 @@ namespace JoesAutoPriceSheet
             return totOilLube + totFlushes + totMisc + totOther + totTax;
         }
 
+        //clears all checked boxes from the oilAndLubeGrpBox
         private void ClearOilLube()
         {
             oilChgeChkBox.Checked = false;
             lubeChkBox.Checked = false;
         }
 
+        //clears all checked boxes from the flushGrpBox
         private void ClearFlushes()
         {
             radFlushChkBox.Checked = false;
             tranFlushChkBox.Checked = false;
         }
 
+        //clears all checked boxes from the miscGrpBox
         private void ClearMisc()
         {
             inspectChkBox.Checked = false;
@@ -172,12 +178,14 @@ namespace JoesAutoPriceSheet
             tireRotChkBox.Checked = false;
         }
 
+        //clears all entered data from the partsLaborGrpBox
         private void ClearOther()
         {
             partsTextBox.Text = "";
             laborTextBox.Text = "";
         }
 
+        //clears the entire sumGrpBox of calculated data
         private void ClearFees()
         {
             totServAndLabOutputLabel.Text = "";
@@ -186,6 +194,7 @@ namespace JoesAutoPriceSheet
             totFeesOutputLabel.Text = "";
         }
 
+        //clears all entered or checked boxes
         private void clearButton_Click(object sender, EventArgs e)
         {
             ClearOilLube();
@@ -195,6 +204,7 @@ namespace JoesAutoPriceSheet
             ClearFees();
         }
 
+        //exits the program after telling the user it is shutting down.
         private void exitButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Shutting Down.");

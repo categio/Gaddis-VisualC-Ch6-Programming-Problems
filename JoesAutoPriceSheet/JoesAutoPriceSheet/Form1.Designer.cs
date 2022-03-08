@@ -56,11 +56,14 @@ namespace JoesAutoPriceSheet
             this.calcButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.joesLogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.oilAndLubeGrpBox.SuspendLayout();
             this.flushGrpBox.SuspendLayout();
             this.miscGrpBox.SuspendLayout();
             this.partsLaborGrpBox.SuspendLayout();
             this.sumGrpBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.joesLogoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // oilAndLubeGrpBox
@@ -224,6 +227,8 @@ namespace JoesAutoPriceSheet
             // 
             // sumGrpBox
             // 
+            this.sumGrpBox.Controls.Add(this.label1);
+            this.sumGrpBox.Controls.Add(this.joesLogoPictureBox);
             this.sumGrpBox.Controls.Add(this.totFeesOutputLabel);
             this.sumGrpBox.Controls.Add(this.totTaxOutputLabel);
             this.sumGrpBox.Controls.Add(this.totPartsOutputLabel);
@@ -232,11 +237,11 @@ namespace JoesAutoPriceSheet
             this.sumGrpBox.Controls.Add(this.taxSumLabel);
             this.sumGrpBox.Controls.Add(this.partsSumLabel);
             this.sumGrpBox.Controls.Add(this.servSumLaborLabel);
-            this.sumGrpBox.Location = new System.Drawing.Point(39, 326);
+            this.sumGrpBox.Location = new System.Drawing.Point(39, 320);
             this.sumGrpBox.Margin = new System.Windows.Forms.Padding(4);
             this.sumGrpBox.Name = "sumGrpBox";
             this.sumGrpBox.Padding = new System.Windows.Forms.Padding(4);
-            this.sumGrpBox.Size = new System.Drawing.Size(472, 211);
+            this.sumGrpBox.Size = new System.Drawing.Size(472, 230);
             this.sumGrpBox.TabIndex = 3;
             this.sumGrpBox.TabStop = false;
             this.sumGrpBox.Text = "Summary";
@@ -247,7 +252,7 @@ namespace JoesAutoPriceSheet
             this.totFeesOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.totFeesOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.totFeesOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.totFeesOutputLabel.Location = new System.Drawing.Point(217, 152);
+            this.totFeesOutputLabel.Location = new System.Drawing.Point(309, 152);
             this.totFeesOutputLabel.Name = "totFeesOutputLabel";
             this.totFeesOutputLabel.Size = new System.Drawing.Size(139, 26);
             this.totFeesOutputLabel.TabIndex = 9;
@@ -259,7 +264,7 @@ namespace JoesAutoPriceSheet
             this.totTaxOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.totTaxOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.totTaxOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.totTaxOutputLabel.Location = new System.Drawing.Point(217, 111);
+            this.totTaxOutputLabel.Location = new System.Drawing.Point(309, 111);
             this.totTaxOutputLabel.Name = "totTaxOutputLabel";
             this.totTaxOutputLabel.Size = new System.Drawing.Size(139, 26);
             this.totTaxOutputLabel.TabIndex = 8;
@@ -271,7 +276,7 @@ namespace JoesAutoPriceSheet
             this.totPartsOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.totPartsOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.totPartsOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.totPartsOutputLabel.Location = new System.Drawing.Point(217, 71);
+            this.totPartsOutputLabel.Location = new System.Drawing.Point(309, 71);
             this.totPartsOutputLabel.Name = "totPartsOutputLabel";
             this.totPartsOutputLabel.Size = new System.Drawing.Size(139, 26);
             this.totPartsOutputLabel.TabIndex = 7;
@@ -283,7 +288,7 @@ namespace JoesAutoPriceSheet
             this.totServAndLabOutputLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.totServAndLabOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.totServAndLabOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.totServAndLabOutputLabel.Location = new System.Drawing.Point(217, 31);
+            this.totServAndLabOutputLabel.Location = new System.Drawing.Point(309, 31);
             this.totServAndLabOutputLabel.Name = "totServAndLabOutputLabel";
             this.totServAndLabOutputLabel.Size = new System.Drawing.Size(139, 26);
             this.totServAndLabOutputLabel.TabIndex = 6;
@@ -293,7 +298,7 @@ namespace JoesAutoPriceSheet
             // 
             this.totFeesSumLlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.totFeesSumLlabel.AutoSize = true;
-            this.totFeesSumLlabel.Location = new System.Drawing.Point(121, 157);
+            this.totFeesSumLlabel.Location = new System.Drawing.Point(213, 157);
             this.totFeesSumLlabel.Name = "totFeesSumLlabel";
             this.totFeesSumLlabel.Size = new System.Drawing.Size(68, 16);
             this.totFeesSumLlabel.TabIndex = 5;
@@ -303,7 +308,7 @@ namespace JoesAutoPriceSheet
             // 
             this.taxSumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.taxSumLabel.AutoSize = true;
-            this.taxSumLabel.Location = new System.Drawing.Point(99, 116);
+            this.taxSumLabel.Location = new System.Drawing.Point(191, 116);
             this.taxSumLabel.Name = "taxSumLabel";
             this.taxSumLabel.Size = new System.Drawing.Size(90, 16);
             this.taxSumLabel.TabIndex = 4;
@@ -313,7 +318,7 @@ namespace JoesAutoPriceSheet
             // 
             this.partsSumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.partsSumLabel.AutoSize = true;
-            this.partsSumLabel.Location = new System.Drawing.Point(86, 76);
+            this.partsSumLabel.Location = new System.Drawing.Point(178, 76);
             this.partsSumLabel.Name = "partsSumLabel";
             this.partsSumLabel.Size = new System.Drawing.Size(103, 16);
             this.partsSumLabel.TabIndex = 3;
@@ -323,7 +328,7 @@ namespace JoesAutoPriceSheet
             // 
             this.servSumLaborLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.servSumLaborLabel.AutoSize = true;
-            this.servSumLaborLabel.Location = new System.Drawing.Point(133, 36);
+            this.servSumLaborLabel.Location = new System.Drawing.Point(225, 36);
             this.servSumLaborLabel.Name = "servSumLaborLabel";
             this.servSumLaborLabel.Size = new System.Drawing.Size(56, 16);
             this.servSumLaborLabel.TabIndex = 2;
@@ -331,7 +336,7 @@ namespace JoesAutoPriceSheet
             // 
             // calcButton
             // 
-            this.calcButton.Location = new System.Drawing.Point(58, 558);
+            this.calcButton.Location = new System.Drawing.Point(58, 569);
             this.calcButton.Name = "calcButton";
             this.calcButton.Size = new System.Drawing.Size(126, 35);
             this.calcButton.TabIndex = 4;
@@ -341,7 +346,7 @@ namespace JoesAutoPriceSheet
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(213, 558);
+            this.clearButton.Location = new System.Drawing.Point(213, 569);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(126, 35);
             this.clearButton.TabIndex = 5;
@@ -351,7 +356,7 @@ namespace JoesAutoPriceSheet
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(365, 558);
+            this.exitButton.Location = new System.Drawing.Point(365, 569);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(126, 35);
             this.exitButton.TabIndex = 6;
@@ -359,12 +364,36 @@ namespace JoesAutoPriceSheet
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // joesLogoPictureBox
+            // 
+            this.joesLogoPictureBox.BackColor = System.Drawing.SystemColors.Control;
+            this.joesLogoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.joesLogoPictureBox.Image = global::JoesAutoPriceSheet.Properties.Resources.Car_Repair_Logo;
+            this.joesLogoPictureBox.Location = new System.Drawing.Point(9, 30);
+            this.joesLogoPictureBox.Name = "joesLogoPictureBox";
+            this.joesLogoPictureBox.Size = new System.Drawing.Size(163, 179);
+            this.joesLogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.joesLogoPictureBox.TabIndex = 10;
+            this.joesLogoPictureBox.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Font = new System.Drawing.Font("Harlow Solid Italic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label1.Location = new System.Drawing.Point(210, 194);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(235, 26);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Thanks for choosing Joe\'s!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(553, 605);
+            this.ClientSize = new System.Drawing.Size(553, 622);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.calcButton);
@@ -387,6 +416,7 @@ namespace JoesAutoPriceSheet
             this.partsLaborGrpBox.PerformLayout();
             this.sumGrpBox.ResumeLayout(false);
             this.sumGrpBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.joesLogoPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -420,6 +450,8 @@ namespace JoesAutoPriceSheet
         private System.Windows.Forms.Button calcButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.PictureBox joesLogoPictureBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 

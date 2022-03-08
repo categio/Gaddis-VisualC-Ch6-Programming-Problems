@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JoesAutoPriceSheet.Properties {
+namespace HospitalCareCharges.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace JoesAutoPriceSheet.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JoesAutoPriceSheet.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HospitalCareCharges.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,9 +63,9 @@ namespace JoesAutoPriceSheet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Car_Repair_Logo {
+        internal static System.Drawing.Bitmap hospital_logo {
             get {
-                object obj = ResourceManager.GetObject("Car-Repair-Logo", resourceCulture);
+                object obj = ResourceManager.GetObject("hospital-logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
