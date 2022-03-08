@@ -207,7 +207,6 @@ namespace JoesAutoPriceSheet
         //exits the program after telling the user it is shutting down.
         private void exitButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Shutting Down.");
             this.Close();
         }
     }
